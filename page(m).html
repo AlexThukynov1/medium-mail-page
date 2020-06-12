@@ -1,0 +1,539 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>HTML Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<style>
+		body {
+			width: 100% !important;
+			-webkit-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100%;
+			margin: 0;
+			padding: 0;
+			line-height: 100%;
+		}
+
+		[style*="Open Sans"] {font-family: 'Open Sans', arial, sans-serif !important;}
+
+		img {
+			outline: none;
+			text-decoration: none;
+			border:none;
+			-ms-interpolation-mode: bicubic;
+			max-width: 100%!important;
+			margin: 0;
+			padding: 0;
+			display: block;
+		}
+    
+		table td {
+			border-collapse: collapse;
+		}
+    
+		table {
+			border-collapse: collapse;
+			mso-table-lspace: 0pt;
+			mso-table-rspace: 0pt;
+		}
+        .pre-header-td{
+            padding-top: 5px;
+            padding-bottom: 15px;
+        }
+        .pre-header-td p {
+            font-family: Arial, Helvetica, sans-serif, 'Open Sans';
+            color:#9a9a9a;
+            font-size: 10px;
+        }
+        .pre-header-td p a{
+            text-decoration: none;
+            color:#0db9eb;
+        }
+        .logo{
+            padding-left: 20px;
+        }
+        .menu td{
+            padding-right: 20px;
+        }
+        .menu td a{
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif, 'Open Sans';
+            color:#fffbff;
+            font-size: 15px;
+        }
+        .start-td{
+            padding-left: 20px;
+            padding-right: 20px;
+            
+        }
+        .start-td h1{
+            color:#363636;
+            font-family: Arial, Helvetica, sans-serif, 'Open Sans';
+        }
+        .start-td p{
+            font-family: Arial, Helvetica, sans-serif, 'Open Sans';
+            font-size: 13px;
+            color:#8d8d8d;
+            line-height: 1.5;  
+        }
+        .link-td{
+            padding-left: 20px;
+            padding-bottom: 40px;
+        }
+        .nice-heading-td{
+            padding-top: 30px;
+        }
+        .nice-heading-td h2{
+            color:#363636;
+            font-family: Arial, Helvetica, sans-serif, 'Open Sans';
+        }
+        .nice-heading-td p {
+            color:#97a7a6;
+            font-family: Arial, Helvetica, sans-serif, 'Open Sans';
+            font-size: 13px;
+        }
+        .nice-heading-link{
+            padding-top: 15px;
+            padding-bottom: 40px;
+        }
+        .blog-img{
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 40px;
+           
+        }
+        .blog-content{
+         padding-bottom: 40px; 
+           
+        }
+        .blog-content h3 {
+            color:#363636;
+            font-family: Arial, Helvetica, sans-serif, 'Open Sans';
+        }
+        .blog-content p {
+            color:#97a7a6;
+            font-family: Arial, Helvetica, sans-serif, 'Open Sans';
+            font-size: 13px;  
+        }
+        .tab-320{
+            margin: 0;
+            padding-right: 20px;
+            padding-bottom: 40px;
+            
+        }
+        .scd-blog{
+            padding-left: 20px;
+            padding-bottom: 40px;
+        }
+        .reviews{
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 40px;
+        }
+        .reviews h3{
+            color:#363636;
+            font-family: Arial, Helvetica, sans-serif, 'Open Sans';
+        }
+        .reviews p{
+            color:#97a7a6;
+            font-family: Arial, Helvetica, sans-serif, 'Open Sans';
+            font-size: 13px; 
+        }
+        .card-item{
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 40px;
+        }
+        .card-item h3{
+            color:#363636;
+            font-family: Arial, Helvetica, sans-serif, 'Open Sans'; 
+        }
+        .card-item p {
+            color:#97a7a6;
+            font-family: Arial, Helvetica, sans-serif, 'Open Sans';
+            font-size: 13px;
+        }
+        .footer-td{
+            padding-bottom: 40px;
+        }
+        .footer-td p{
+            font-family: Arial, Helvetica, sans-serif, 'Open Sans';
+            color:#9a9a9a;
+            font-size: 10px;
+        }
+        .footer-td p a {
+            text-decoration: none;
+            color:#0db9eb;
+        }
+        @media (max-width: 600px){
+            .tab-800{
+                width:600px !important;
+            }
+            .tab-580{
+                width:475px !important;
+            }
+            .tab-320{
+                width:280px !important;
+            }
+        }
+        @media (max-width: 475px){
+            .tab-800{
+                width:320px !important;
+            }
+            .tab-580{
+                width:320px !important;
+            }
+            .tab-320{
+                width:240px !important;
+            }
+            .card-item{
+                display: block !important;
+            }
+            .tab-card{
+                display: block !important;
+            }
+            .reviews{
+                display: block !important;
+            }
+            .blog-content{
+                display: block !important;
+            }
+            .header-tr {
+                display: block !important;  
+            }
+            .tab-170{
+                width:300px !important;
+                padding-left: 20px !important;
+            }
+            .card-td{
+                display: block !important;
+            }
+            .logo{
+                display: block !important;
+                padding-left:120px !important ;
+            }
+            .nav-bar{
+                padding-left: 20px !important;
+            }
+            .blog-wrap td{
+                display: block;
+            }
+            .blog-img {
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            .scd-blog{
+                padding-left: 0px;
+            }
+        }
+        @media (max-width: 320px){
+            .tab-800{
+                width:320px !important;
+            }
+            .tab-580{
+                width:320px !important;
+            }
+            .tab-320{
+                width:240px !important;
+            }
+            .card-item{
+                display: block !important;
+            }
+            .tab-card{
+                display: block !important;
+            }
+            .reviews{
+                display: block !important;
+            }
+            .blog-content{
+                display: block !important;
+            }
+            .header-tr {
+                display: block !important;  
+            }
+            .tab-170{
+                width:300px !important;
+                padding-left: 20px !important;
+            }
+            .card-td{
+                display: block !important;
+            }
+            .logo{
+                padding-left:120px !important ;
+            }
+            .nav-bar{
+                padding-left: 20px !important;
+            }
+            .blog-wrap td{
+                display: block;
+            }
+            .blog-img {
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            .scd-blog{
+                padding-left: 0px;
+            }
+        }
+	</style>
+</head>
+
+<body style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;width:100% !important;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;line-height:100%;" >
+	<div style="font-size:0px;font-color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;" >Тестовое письмо</div>
+	<table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ededed" align="center" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+		<tr>
+            <td style="border-collapse:collapse;" >
+                <table class="tab-800" cellpadding="0" cellspacing="0" width="800" bgcolor="#f6f4f5" align="center" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+                    <tr>
+                        <td style="border-collapse:collapse;" >
+                            <table class="tab-580" cellpadding="0" cellspacing="0" width="580" bgcolor="#f6f4f5" align="center" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+                                <tr>
+                                    <td class="pre-header-td" align="right" style="border-collapse:collapse;padding-top:5px;padding-bottom:15px;" >
+                                        <p style="font-family:Arial, Helvetica, sans-serif, 'Open Sans';color:#9a9a9a;font-size:10px;" >
+											If you cannot read this email, please <a href="#" style="text-decoration:none;color:#0db9eb;" >click here</a>
+										</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-collapse:collapse;" >
+                            <table class="tab-580" cellpadding="0" cellspacing="0" width="580" bgcolor="#0db9eb" align="center" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+                                <tr class="header-tr">
+                                    <td class="logo" style="border-collapse:collapse;padding-left:20px;" >
+                                        <a href="#"><img src="https://scontent.fiev10-1.fna.fbcdn.net/v/t1.0-9/cp0/103565277_1462519807269181_2924643528323260423_n.jpg?_nc_cat=104&_nc_sid=0debeb&_nc_ohc=lijXDMJormwAX-cO2TS&_nc_ht=scontent.fiev10-1.fna&oh=f9ca0431700e9635356b03ea267bcaab&oe=5F088BE7" alt="Logo" style="outline-style:none;text-decoration:none;border-style:none;-ms-interpolation-mode:bicubic;max-width:100%!important;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;display:block;" ></a>
+                                    </td>
+                                    <td class="nav-bar" style="border-collapse:collapse;" >
+                                        <table class="tab-170" cellpadding="0" cellspacing="0" width="170" bgcolor="#0db9eb" align="right" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+                                            <tr class="menu">
+                                                <td style="border-collapse:collapse;padding-right:20px;" >
+                                                    <a href="#" style="text-decoration:none;font-family:Arial, Helvetica, sans-serif, 'Open Sans';color:#fffbff;font-size:15px;" >HOME</a>
+                                                </td>
+                                                <td style="border-collapse:collapse;padding-right:20px;" >
+                                                    <a href="#" style="text-decoration:none;font-family:Arial, Helvetica, sans-serif, 'Open Sans';color:#fffbff;font-size:15px;" >ABOUT</a>
+                                                </td>
+                                                <td style="border-collapse:collapse;padding-right:20px;" >
+                                                    <a href="#" style="text-decoration:none;font-family:Arial, Helvetica, sans-serif, 'Open Sans';color:#fffbff;font-size:15px;" >SHOP</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-collapse:collapse;" >
+                          <table class="tab-580" cellpadding="0" cellspacing="0" width="580" bgcolor="#ffffff" align="center" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+                              <tr>
+                                  <td style="border-collapse:collapse;" >
+                                    <img src="https://scontent.fiev10-1.fna.fbcdn.net/v/t1.0-9/103294911_1461436880710807_245498819250429486_n.jpg?_nc_cat=108&_nc_sid=0debeb&_nc_ohc=F5929it6r8gAX-PMqDo&_nc_ht=scontent.fiev10-1.fna&oh=f990bf5099d93627121a550f9220e319&oe=5F05D819" alt="banner" style="outline-style:none;text-decoration:none;border-style:none;-ms-interpolation-mode:bicubic;max-width:100%!important;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;display:block;" >
+                                  </td>
+                              </tr>
+                          </table>  
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-collapse:collapse;" >
+                            <table class="tab-580" cellpadding="0" cellspacing="0" width="580" bgcolor="#ffffff" align="center" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+                                <tr>
+                                    <td class="start-td" style="border-collapse:collapse;padding-left:20px;padding-right:20px;" >
+                                        <h1 style="color:#363636;font-family:Arial, Helvetica, sans-serif, 'Open Sans';" > Lorem ipsum</h1>
+                                        <p style="font-family:Arial, Helvetica, sans-serif, 'Open Sans';font-size:13px;color:#8d8d8d;line-height:1.5;" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit quidem non, ea sequi nulla praesentium eum quos voluptatum accusantium necessitatibus beatae? Maxime voluptate atque error pariatur non iusto nostrum optio, consequatur sint ullam exercitationem vero, eligendi dolor accusamus libero impedit voluptatum culpa explicabo!</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="link-td" style="border-collapse:collapse;padding-left:20px;padding-bottom:40px;" >
+                                        <a href="#">
+                                            <img src="https://scontent.fiev10-1.fna.fbcdn.net/v/t1.0-9/cp0/103096421_1461529184034910_4876727452240389559_n.jpg?_nc_cat=106&_nc_sid=0debeb&_nc_ohc=pVpujk6fy6kAX-fF_aR&_nc_ht=scontent.fiev10-1.fna&oh=c009e748193e5bb1bc57ab5e3801e450&oe=5F04D7FC" alt="click here" style="outline-style:none;text-decoration:none;border-style:none;-ms-interpolation-mode:bicubic;max-width:100%!important;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;display:block;" >
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-collapse:collapse;" >
+                            <table class="tab-580" cellpadding="0" cellspacing="0" width="580" bgcolor="#ffffff" align="center" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+                                <tr>
+                                    <td class="nice-heading-td" align="center" style="border-collapse:collapse;padding-top:30px;" >
+                                        <h2 style="color:#363636;font-family:Arial, Helvetica, sans-serif, 'Open Sans';" >Nice heading here</h2>
+                                        <p style="color:#97a7a6;font-family:Arial, Helvetica, sans-serif, 'Open Sans';font-size:13px;" >Lorem ipsum dolor sit amet.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="nice-heading-link" align="center" style="border-collapse:collapse;padding-top:15px;padding-bottom:40px;" >
+                                        <a href="#">
+                                            <img src="https://scontent.fiev10-1.fna.fbcdn.net/v/t1.0-9/102956796_1461632234024605_4664430489439732729_n.jpg?_nc_cat=103&_nc_sid=0debeb&_nc_ohc=ZM5ZMwYj6u4AX_QpLYQ&_nc_ht=scontent.fiev10-1.fna&oh=4a84ead3079ed28eef4bcdb4866f56e1&oe=5F080E2F" alt="click here" style="outline-style:none;text-decoration:none;border-style:none;-ms-interpolation-mode:bicubic;max-width:100%!important;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;display:block;" >
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-collapse:collapse;" >
+                            <table class="tab-580" cellpadding="0" cellspacing="0" width="580" bgcolor="#ffffff" align="center" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+                                <tr class="blog-wrap"align="center" >
+                                    <td class="blog-img" style="border-collapse:collapse;padding-left:20px;padding-right:20px;padding-bottom:40px;" >
+                                        <img src="https://scontent.fiev10-1.fna.fbcdn.net/v/t1.0-9/103452568_1461436864044142_4730691614992861779_n.jpg?_nc_cat=105&_nc_sid=0debeb&_nc_ohc=3Y6-8fxiPa0AX-GIFeh&_nc_ht=scontent.fiev10-1.fna&oh=bd8a541ea94c41f27714f26d33b70feb&oe=5F089870" alt="blog" style="outline-style:none;text-decoration:none;border-style:none;-ms-interpolation-mode:bicubic;max-width:100%!important;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;display:block;" >
+                                    </td>
+                                    <td align="center" style="border-collapse:collapse;" >
+                                       <table class="tab-320" cellpadding="0" cellspacing="0" width="320" bgcolor="#ffffff" align="center" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-right:20px;padding-bottom:40px;" >
+                                           <tr>
+                                               <td class="blog-content" align="center" style="border-collapse:collapse;padding-bottom:40px;" >
+                                                <h3 style="color:#363636;font-family:Arial, Helvetica, sans-serif, 'Open Sans';" >Lorem ipsum.</h3>
+                                                <p style="color:#97a7a6;font-family:Arial, Helvetica, sans-serif, 'Open Sans';font-size:13px;" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Id provident voluptatibus numquam optio rem accusantium dolorum. Magni, repellat nam!</p>
+                                                <a href="#">
+                                                    <img src="https://scontent.fiev10-1.fna.fbcdn.net/v/t1.0-9/cp0/103096421_1461529184034910_4876727452240389559_n.jpg?_nc_cat=106&_nc_sid=0debeb&_nc_ohc=4arFpt0Y-hEAX8fRZD5&_nc_ht=scontent.fiev10-1.fna&oh=ee2a80e07871ac7ec887216928113daa&oe=5F08CC7C" alt="Read now" style="outline-style:none;text-decoration:none;border-style:none;-ms-interpolation-mode:bicubic;max-width:100%!important;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;display:block;" >
+                                                </a>
+                                               </td>
+                                           </tr>
+                                       </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-collapse:collapse;" >
+                            <table class="tab-580" cellpadding="0" cellspacing="0" width="580" bgcolor="#ffffff" align="center" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+                                <tr class="blog-wrap">
+                                    <td class="scd-blog" align="center" style="border-collapse:collapse;padding-left:20px;padding-bottom:40px;" >
+                                        <table class="tab-320" cellpadding="0" cellspacing="0" width="320" bgcolor="#ffffff" align="center" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-right:20px;padding-bottom:40px;" >
+                                            <tr>
+                                                <td class="blog-content"align="center" style="border-collapse:collapse;padding-bottom:40px;" >
+                                                 <h3 style="color:#363636;font-family:Arial, Helvetica, sans-serif, 'Open Sans';" >Lorem ipsum.</h3>
+                                                 <p style="color:#97a7a6;font-family:Arial, Helvetica, sans-serif, 'Open Sans';font-size:13px;" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Id provident voluptatibus numquam optio rem accusantium dolorum. Magni, repellat nam!</p>
+                                                 <a href="#">
+                                                     <img src="https://scontent.fiev10-1.fna.fbcdn.net/v/t1.0-9/cp0/103096421_1461529184034910_4876727452240389559_n.jpg?_nc_cat=106&_nc_sid=0debeb&_nc_ohc=4arFpt0Y-hEAX8fRZD5&_nc_ht=scontent.fiev10-1.fna&oh=ee2a80e07871ac7ec887216928113daa&oe=5F08CC7C" alt="Read now" style="outline-style:none;text-decoration:none;border-style:none;-ms-interpolation-mode:bicubic;max-width:100%!important;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;display:block;" >
+                                                 </a>
+                                                </td>
+                                            </tr>
+                                        </table>  
+                                    </td>
+                                    <td class="blog-img" align="center" style="border-collapse:collapse;padding-left:20px;padding-right:20px;padding-bottom:40px;" >
+                                        <img src="https://scontent.fiev10-1.fna.fbcdn.net/v/t1.0-9/103567662_1461436874044141_8433146999419697902_n.jpg?_nc_cat=110&_nc_sid=0debeb&_nc_ohc=zg8ofeAvBQQAX_aIZcL&_nc_ht=scontent.fiev10-1.fna&oh=9f6f7308425df5c179299fd21b9bda64&oe=5F0AA2C0" alt="blog" style="outline-style:none;text-decoration:none;border-style:none;-ms-interpolation-mode:bicubic;max-width:100%!important;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;display:block;" >
+                                    </td>
+                                </tr>
+    
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-collapse:collapse;" >
+                            <table class="tab-580" cellpadding="0" cellspacing="0" width="580" bgcolor="#ffffff" align="center" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+                                <tr>
+                                    <td class="reviews" style="border-collapse:collapse;padding-left:20px;padding-right:20px;padding-bottom:40px;" >
+                                        <img src="https://scontent.fiev10-1.fna.fbcdn.net/v/t1.0-9/102915314_1461436870710808_1994025057281653619_n.jpg?_nc_cat=108&_nc_sid=0debeb&_nc_ohc=GfECW8MxXlQAX_5qz6L&_nc_ht=scontent.fiev10-1.fna&oh=42f41b14707cfc5f5255e85be907e3ee&oe=5F0919B3" alt="bird" style="outline-style:none;text-decoration:none;border-style:none;-ms-interpolation-mode:bicubic;max-width:100%!important;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;display:block;" >
+                                        <h3 style="color:#363636;font-family:Arial, Helvetica, sans-serif, 'Open Sans';" >Lorem ipsum</h3>
+                                        <p style="color:#97a7a6;font-family:Arial, Helvetica, sans-serif, 'Open Sans';font-size:13px;" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam facere veritatis accusamus itaque alias nam accusantium voluptatum reprehenderit eaque voluptas!</p>
+                                        <a href="">
+                                            <img src="https://scontent.fiev10-1.fna.fbcdn.net/v/t1.0-9/cp0/103096421_1461529184034910_4876727452240389559_n.jpg?_nc_cat=106&_nc_sid=0debeb&_nc_ohc=4arFpt0Y-hEAX8fRZD5&_nc_ht=scontent.fiev10-1.fna&oh=ee2a80e07871ac7ec887216928113daa&oe=5F08CC7C" alt="Read now" style="outline-style:none;text-decoration:none;border-style:none;-ms-interpolation-mode:bicubic;max-width:100%!important;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;display:block;" >
+                                        </a>
+                                    </td>
+                                    <td class="reviews" style="border-collapse:collapse;padding-left:20px;padding-right:20px;padding-bottom:40px;" >
+                                        <img src="https://scontent.fiev10-1.fna.fbcdn.net/v/t1.0-9/102915314_1461436870710808_1994025057281653619_n.jpg?_nc_cat=108&_nc_sid=0debeb&_nc_ohc=GfECW8MxXlQAX_5qz6L&_nc_ht=scontent.fiev10-1.fna&oh=42f41b14707cfc5f5255e85be907e3ee&oe=5F0919B3" alt="bird" style="outline-style:none;text-decoration:none;border-style:none;-ms-interpolation-mode:bicubic;max-width:100%!important;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;display:block;" >
+                                        <h3 style="color:#363636;font-family:Arial, Helvetica, sans-serif, 'Open Sans';" >Lorem ipsum</h3>
+                                        <p style="color:#97a7a6;font-family:Arial, Helvetica, sans-serif, 'Open Sans';font-size:13px;" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam facere veritatis accusamus itaque alias nam accusantium voluptatum reprehenderit eaque voluptas!</p>
+                                        <a href="">
+                                            <img src="https://scontent.fiev10-1.fna.fbcdn.net/v/t1.0-9/cp0/103096421_1461529184034910_4876727452240389559_n.jpg?_nc_cat=106&_nc_sid=0debeb&_nc_ohc=4arFpt0Y-hEAX8fRZD5&_nc_ht=scontent.fiev10-1.fna&oh=ee2a80e07871ac7ec887216928113daa&oe=5F08CC7C" alt="Read now" style="outline-style:none;text-decoration:none;border-style:none;-ms-interpolation-mode:bicubic;max-width:100%!important;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;display:block;" >
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-collapse:collapse;" >
+                            <table class="tab-580" cellpadding="0" cellspacing="0" width="580" bgcolor="#ffffff" align="center" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+                                <tr>
+                                    <td class="card-td" style="border-collapse:collapse;" >
+                                        <table class="tab-card" cellpadding="0" cellspacing="0" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+                                            <tr>
+                                                <td class="card-item" align="center" style="border-collapse:collapse;padding-left:20px;padding-right:20px;padding-bottom:40px;" >
+                                                    <img src="https://scontent.fiev10-1.fna.fbcdn.net/v/t1.0-9/103373142_1461436860710809_8099531556179439744_n.jpg?_nc_cat=105&_nc_sid=0debeb&_nc_ohc=cjRAvSlUBWIAX9aRm4K&_nc_ht=scontent.fiev10-1.fna&oh=c2a863bfcc41ebfa1e767e341d9caf4e&oe=5F07CF49" alt="card-img" style="outline-style:none;text-decoration:none;border-style:none;-ms-interpolation-mode:bicubic;max-width:100%!important;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;display:block;" >
+                                                    <h3 style="color:#363636;font-family:Arial, Helvetica, sans-serif, 'Open Sans';" >Lorem ipsum</h3>
+                                                    <p style="color:#97a7a6;font-family:Arial, Helvetica, sans-serif, 'Open Sans';font-size:13px;" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, tempora quas recusandae molestias.</p>
+                                                    <a href="#">
+                                                        <img src="https://scontent.fiev10-1.fna.fbcdn.net/v/t1.0-9/cp0/103096421_1461529184034910_4876727452240389559_n.jpg?_nc_cat=106&_nc_sid=0debeb&_nc_ohc=4arFpt0Y-hEAX8fRZD5&_nc_ht=scontent.fiev10-1.fna&oh=ee2a80e07871ac7ec887216928113daa&oe=5F08CC7C" alt="Read now" style="outline-style:none;text-decoration:none;border-style:none;-ms-interpolation-mode:bicubic;max-width:100%!important;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;display:block;" >
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td class="card-td" style="border-collapse:collapse;" >
+                                        <table class="tab-card" cellpadding="0" cellspacing="0" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+                                            <tr>
+                                                <td class="card-item" align="center" style="border-collapse:collapse;padding-left:20px;padding-right:20px;padding-bottom:40px;" >
+                                                    <img src="https://scontent.fiev10-1.fna.fbcdn.net/v/t1.0-9/103373142_1461436860710809_8099531556179439744_n.jpg?_nc_cat=105&_nc_sid=0debeb&_nc_ohc=cjRAvSlUBWIAX9aRm4K&_nc_ht=scontent.fiev10-1.fna&oh=c2a863bfcc41ebfa1e767e341d9caf4e&oe=5F07CF49" alt="card-img" style="outline-style:none;text-decoration:none;border-style:none;-ms-interpolation-mode:bicubic;max-width:100%!important;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;display:block;" >
+                                                    <h3 style="color:#363636;font-family:Arial, Helvetica, sans-serif, 'Open Sans';" >Lorem ipsum</h3>
+                                                    <p style="color:#97a7a6;font-family:Arial, Helvetica, sans-serif, 'Open Sans';font-size:13px;" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, tempora quas recusandae molestias.</p>
+                                                    <a href="#">
+                                                        <img src="https://scontent.fiev10-1.fna.fbcdn.net/v/t1.0-9/cp0/103096421_1461529184034910_4876727452240389559_n.jpg?_nc_cat=106&_nc_sid=0debeb&_nc_ohc=4arFpt0Y-hEAX8fRZD5&_nc_ht=scontent.fiev10-1.fna&oh=ee2a80e07871ac7ec887216928113daa&oe=5F08CC7C" alt="Read now" style="outline-style:none;text-decoration:none;border-style:none;-ms-interpolation-mode:bicubic;max-width:100%!important;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;display:block;" >
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td class="card-td" style="border-collapse:collapse;" >
+                                        <table class="tab-card" cellpadding="0" cellspacing="0" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+                                            <tr>
+                                                <td class="card-item" align="center" style="border-collapse:collapse;padding-left:20px;padding-right:20px;padding-bottom:40px;" >
+                                                    <img src="https://scontent.fiev10-1.fna.fbcdn.net/v/t1.0-9/103373142_1461436860710809_8099531556179439744_n.jpg?_nc_cat=105&_nc_sid=0debeb&_nc_ohc=cjRAvSlUBWIAX9aRm4K&_nc_ht=scontent.fiev10-1.fna&oh=c2a863bfcc41ebfa1e767e341d9caf4e&oe=5F07CF49" alt="card-img" style="outline-style:none;text-decoration:none;border-style:none;-ms-interpolation-mode:bicubic;max-width:100%!important;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;display:block;" >
+                                                    <h3 style="color:#363636;font-family:Arial, Helvetica, sans-serif, 'Open Sans';" >Lorem ipsum</h3>
+                                                    <p style="color:#97a7a6;font-family:Arial, Helvetica, sans-serif, 'Open Sans';font-size:13px;" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, tempora quas recusandae molestias.</p>
+                                                    <a href="#">
+                                                        <img src="https://scontent.fiev10-1.fna.fbcdn.net/v/t1.0-9/cp0/103096421_1461529184034910_4876727452240389559_n.jpg?_nc_cat=106&_nc_sid=0debeb&_nc_ohc=4arFpt0Y-hEAX8fRZD5&_nc_ht=scontent.fiev10-1.fna&oh=ee2a80e07871ac7ec887216928113daa&oe=5F08CC7C" alt="Read now" style="outline-style:none;text-decoration:none;border-style:none;-ms-interpolation-mode:bicubic;max-width:100%!important;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;display:block;" >
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-collapse:collapse;" >
+                            <table class="tab-580" cellpadding="0" cellspacing="0" width="580" bgcolor="#ffffff" align="center" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+                                <tr>
+                                    <td class="start-td" style="border-collapse:collapse;padding-left:20px;padding-right:20px;" >
+                                        <h1 style="color:#363636;font-family:Arial, Helvetica, sans-serif, 'Open Sans';" > Lorem ipsum</h1>
+                                        <p style="font-family:Arial, Helvetica, sans-serif, 'Open Sans';font-size:13px;color:#8d8d8d;line-height:1.5;" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit quidem non, ea sequi nulla praesentium eum quos voluptatum accusantium necessitatibus beatae? Maxime voluptate atque error pariatur non iusto nostrum optio, consequatur sint ullam exercitationem vero, eligendi dolor accusamus libero impedit voluptatum culpa explicabo!</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="link-td" style="border-collapse:collapse;padding-left:20px;padding-bottom:40px;" >
+                                        <a href="#">
+                                            <img src="https://scontent.fiev10-1.fna.fbcdn.net/v/t1.0-9/cp0/103096421_1461529184034910_4876727452240389559_n.jpg?_nc_cat=106&_nc_sid=0debeb&_nc_ohc=pVpujk6fy6kAX-fF_aR&_nc_ht=scontent.fiev10-1.fna&oh=c009e748193e5bb1bc57ab5e3801e450&oe=5F04D7FC" alt="click here" style="outline-style:none;text-decoration:none;border-style:none;-ms-interpolation-mode:bicubic;max-width:100%!important;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;display:block;" >
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-collapse:collapse;" >
+                            <table class="tab-580" cellpadding="0" cellspacing="0" width="580" bgcolor="#f6f4f5" align="center" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" >
+                                <tr>
+                                    <td class="footer-td" align="center" style="border-collapse:collapse;padding-bottom:40px;" >
+                                        <p style="font-family:Arial, Helvetica, sans-serif, 'Open Sans';color:#9a9a9a;font-size:10px;" >
+                                            If you don't want to receive updates, please <a href="#" style="text-decoration:none;color:#0db9eb;" >unsubscribe</a>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+	</table>
+</body>
+
+</html>
